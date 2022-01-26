@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="header"><h1>Skate Quiz</h1></div>
+        <div class="main">
+            <div id="intro">
+                <h2>Welcome</h2>
+                <p>You are about to start a skate quiz! Sounds exciting, doesnt it? But firt, I will need you to type your name below.</p>
+                <label for="name"><strong>Name:</strong></label>
+                <input type="text" id="userName" name="name" required>
+             </div>
+             <div id="questions-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div> 
+            <div id="feedBack" class="hide">
+                <p id="feedBack-txt">feedBack text</p>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+            </div> 
+        </div>
+        <div class="footer">
+            <div class="myName"><h2>Mauricio Murta</h2></div>
+            <div class="myEmail"><h2>mauriciomurta13@hotmail.com</h2></div>
+        </div>
+    </div>
+</body>
+</html>

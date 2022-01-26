@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.page{
+    background-image: url(images/woodBackground.jpg);
+    width: 100%;
+    height: 100%;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+ 	grid-template-rows: repeat(7, 1fr);
+ 	grid-template-areas: 
+ 	"a a a a a a"
+ 	". b b b b ."
+    ". b b b b ."
+    ". b b b b ."
+    ". b b b b ."
+    ". b b b b ."
+    "c c c c c c";
+}
+.header{
+	grid-area: a;
+    display: grid;
+    place-items: center;
+    font-size: xx-large;
+}
+.main{
+    font-size: large;
+	grid-area: b;
+	border: solid;
+	background-image: url(images/skateBack.jfif);
+    display: grid;
+    place-items: center;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20% 5%;
+    margin-top: 5%;
+}
+.btn{
+    border-radius: 3px;
+    border: 2px solid;
+    font-size: large;
+    padding: 1%;
+}
+.btn:hover{
+    border-color: blue;
+}
+.btn.correct{
+    border-color: green;
+}
+.btn.wrong{
+    border-color: red;
+}
+.start-btn, .next-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+}
+#question{
+    font-size: 110%;
+}
+#feedBack-txt{
+    font-size: 110%;
+    font-weight: 600;
+}
+.hide{
+    display: none;
+}
+.footer{
+    font-size: medium;
+    grid-area: c;
+    display: grid;  
+    place-items: center;
+
+}
